@@ -59,8 +59,10 @@
 
 ```
     docker version
+    sudo docker version
     
     docker-compose version
+    sudo docker-compose version
 ```
 
 도커 버젼을 확인하고 도커가 잘 설치되었는지 확인해 보자.

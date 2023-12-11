@@ -72,3 +72,14 @@
 
 외울것 아니라 참고,활용하여 사용하면 될 것 같다.
 
+## docker 에는 컨테이너나 애플리케이션을 자동으로 정리하는 기능이 없다.
+    환경을 초기화 하려면 아래의 명령어를 사용한다.
+
+```
+    docker container rm -f $(docker container ls -aq)
+```
+
+그리고 아래 명령을 사용하면 이미지가 차지한 디스크 용량을 모두 회수할 수 있다.
+```
+    docker image rm -f $(docker image ls -f reference='diamol/*' -q)
+```
